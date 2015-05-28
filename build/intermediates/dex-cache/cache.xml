@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\Repo\Git\Support7Demos\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\19.1.0\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="c654eae911e6b937a56f14ba353baa95a82adb9c">
+        <dex dex="E:\Repo\Git\Support7Demos\app\build\intermediates\pre-dexed\debug\classes-e35ee757a12b5c887d681946068a9bb4d40dcde1.jar" />
+    </item>
+    <item
+        jar="E:\Repo\Git\Support7Demos\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\19.1.0\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28">
+        <dex dex="E:\Repo\Git\Support7Demos\app\build\intermediates\pre-dexed\debug\classes-5bc5ddaebfab59454cfe3f1b2ef9546657e4216d.jar" />
+    </item>
+    <item
+        jar="E:\Android\DevelopTools\android-sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="E:\Repo\Git\Support7Demos\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-2dcd37226b0b9dcc0a5cdddc5e5e5cc400f345ca.jar" />
+    </item>
+    <item
+        jar="E:\Repo\Git\Support7Demos\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\19.1.0\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="af4cc326e6cd92f88db12298767e521743aedd36">
+        <dex dex="E:\Repo\Git\Support7Demos\app\build\intermediates\pre-dexed\debug\classes-caac29cc9321af7c2839ba1d68a6a80f1e16392a.jar" />
+    </item>
+    <item
+        jar="E:\Repo\Git\Support7Demos\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\19.1.0\libs\internal_impl-19.1.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="e898b3d4e2733017f23894a563ea4f5b3aca72bc">
+        <dex dex="E:\Repo\Git\Support7Demos\app\build\intermediates\pre-dexed\debug\internal_impl-19.1.0-b480538b862d749bdd28323496a9c2d4a88806e0.jar" />
+    </item>
+
+</items>
