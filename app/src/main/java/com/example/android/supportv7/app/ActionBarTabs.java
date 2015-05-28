@@ -109,7 +109,7 @@ public class ActionBarTabs extends ActionBarActivity {
 
     }
 
-    private class TabContentFragment extends Fragment {
+    public class TabContentFragment extends Fragment {
         private String mText;
 
         public TabContentFragment(String text) {
