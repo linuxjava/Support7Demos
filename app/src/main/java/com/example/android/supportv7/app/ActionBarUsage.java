@@ -26,10 +26,12 @@ import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.ViewConfiguration;
 import android.view.Window;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
 /**
@@ -47,6 +49,8 @@ public class ActionBarUsage extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         mSearchText = new TextView(this);
         setContentView(mSearchText);
+
+        setOverflowShowingAlways();
     }
 
     @Override
@@ -96,6 +100,17 @@ public class ActionBarUsage extends ActionBarActivity {
             }
         }
         return super.onMenuOpened(featureId, menu);
+    }
+
+    private void setOverflowShowingAlways() {
+        try {
+            ViewConfiguration config = ViewConfiguration.get(this);
+            Field menuKeyField = ViewConfiguration.class.getDeclaredField("sHasPermanentMenuKey");
+            menuKeyField.setAccessible(true);
+            menuKeyField.setBoolean(config, false);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     // The following callbacks are called for the SearchView.OnQueryChangeListener
