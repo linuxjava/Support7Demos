@@ -74,17 +74,16 @@ public class ActionBarUsage extends ActionBarActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Toast.makeText(this, "Selected Item: " + item.getTitle(), Toast.LENGTH_SHORT).show();
-        return true;
-    }
+        switch (item.getItemId()) {
+            case R.id.action_sort_alpha:
+            case R.id.action_sort_size:
+                onSort(item);
+                break;
+        }
 
-    // This method is specified as an onClick handler in the menu xml and will
-    // take precedence over the Activity's onOptionsItemSelected method.
-    // See res/menu/actions.xml for more info.
-    public void onSort(MenuItem item) {
-        mSortMode = item.getItemId();
-        // Request a call to onPrepareOptionsMenu so we can change the sort icon
-        supportInvalidateOptionsMenu();
+        Toast.makeText(this, "Selected Item: " + item.getTitle(), Toast.LENGTH_SHORT).show();
+
+        return true;
     }
 
     @Override
@@ -111,6 +110,12 @@ public class ActionBarUsage extends ActionBarActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    private void onSort(MenuItem item) {
+        mSortMode = item.getItemId();
+        // Request a call to onPrepareOptionsMenu so we can change the sort icon
+        supportInvalidateOptionsMenu();
     }
 
     // The following callbacks are called for the SearchView.OnQueryChangeListener
